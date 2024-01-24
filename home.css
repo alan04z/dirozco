@@ -159,13 +159,15 @@ body{
 .image img{
     width:300px;
     border-radius:20px 20px 20px 0px;
-    height:230px;
+    height:250px;
 }
 
 
 .pd .titl{
     text-align: center;
     font-weight: 900;
+    padding-top: 3px;
+    font-size: larger;
 }
 .bt button{
     background-color: white;
