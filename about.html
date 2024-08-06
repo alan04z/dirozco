@@ -1,19 +1,313 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=deivce-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <title>Diroz Group</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="about.css"/>
-        <link rel="icon" href="images/asd.jpg"/>
-    </head>
-    <body>
-        <!--navbar-->
-        <div class="navbar">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Diroz Company</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #1A3636;
+        }
+        .navbar{
+            width: 100%;
+            height: 90px;
+            background-color: #1A3636;
+            display: flex;
+           
+        }
+        .navbar h1{
+            color: #F9E400;
+            font-family:sans-serif;
+            margin: auto;
+            margin-left: 40px;
+        }
+        .navbar  ul{
+            margin: auto;
+            display: flex;
+            color: white;
+          
+        }
+        .navbar  li{
+            margin-left: 30px;
+            font-weight: 900;
+            background-color: #ffffff;
+            padding: 5px;
+            border: none;
+            border-radius: 6px;
+            color: black;
+        
+        }
+
+     
+        .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+
+    .foot{
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        margin-top: 60px;
     
-            <h1>Diroz <font>Company</font></h1>
+    }
+
+    .foot h1{
+        color: white;
+        text-align: center;
+    }
+    .phone{
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .address{
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        color: white;
+    }
+    .icons{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons ul{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons li{
+        text-align: center;
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .icons a{
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    .comp{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .comp h4{
+        color: white;
+        opacity: 0.6;
+        margin-top: 10px;
+    }
+
+    .nav a{
+    text-decoration: none;
+}
+
+.nav ul{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 60px;
+    
+}
+
+.nav li{
+    margin: 10px;
+}
+
+.nav li a{
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    color: black;
+    margin: 10px;
+}
+
+.nav li a:hover{
+    background-color: #eee;
+}
+
+.header__toggle,
+.header__close{
+    display: none;
+}
+
+@media screen and (max-width:780px) {
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.navbar h1{
+    margin: auto;
+    margin-left: 20px;
+}
+
+.navbar h1 font{
+    color: white;
+}
+
+
+        .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+
+.header__toggle{
+    display: inline;
+    color: #eeee;
+    font-size:40px;
+    color: white;
+    margin: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.header__close{
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.header__close:hover{
+ background-color: #000;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #1A3636;
+    color: black;
+    width: 50%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+    text-align: center;
+}
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.nav li a{
+
+    color: black;
+}
+.show{
+    right: 0;
+}
+    
+}
+
+@media screen and (min-width:780px){
+    main{
+    display: inline-block;
+    margin: auto ;
+        margin-top: 50px;
+        align-items: center;
+        margin-left: 20px;
+}
+
+    .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+            display: inline-block;
+            margin: 10px;
+            align-items: center;
+            margin-left: 30px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+}
+
+    .bg{
+        width: 90%;
+        height: 500px;
+        background-color: #1A3636;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 20px;
+        box-shadow: white 0px 0px 30px;
+        display: block;
+    }
+
+    .logo{
+        width: 130px;
+        height: 130px;
+        margin: auto;
+        border-radius: 50%;
+        
+    }
+    
+    .title{
+        margin-top: 70px;
+        color: white;
+    }
+
+    .title p{
+        text-align: center;
+        margin: 15px;
+        font-size: 19px;
+    }
+
+    .location{
+        width: 90%;
+        height: 450px;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 20px;
+        box-shadow: white 0px 0px 30px;
+    }
+
+    </style>
+</head>
+<body>
+   
+        <div class="navbar">
+            <h1>Diroz Company</h1>
             <nav class="nav" id="nav-menu">
                 <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
                 <ul type="none">
@@ -24,86 +318,57 @@
                     <li><a href="about.html">About Us</a></li>
                 </ul>
                 </nav>
-
                 <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+        </div>
+
+        <div class="bg">
+            <div class="logo">
+                <img src="image/asd.jpg" alt="" height="130px" width="130"  style="border-radius: 50%; margin-top: 20px;  box-shadow: white 0px 0px 20px;">
+            </div>
             
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="images/asd.jpg"/>
-                <hr>
-            </div>
-            <div class="titl">
-                <p>
-                   Welcome to Diroz Company where we bring you a delightful blend of tradition and innovation in every dairy product and sweet we create.
-                   <br>
+            <div class="title">
+                <p>Welcome to Diroz Company where we bring you a delightful blend of tradition and innovation in every dairy product and sweet we create.
                     Established with a passion for crafting indulgent
-                    <br>
-                     treats that captivate the senses, we take pride in offering a wide range of high-quality and 
-                   <br>
-                   delicious products that cater to the 
-                   <br>diverse tastes of our customers.
+                    treats that captivate the senses, we take pride in offering a wide range of high-quality and
+                    delicious products that cater to the
+                    diverse tastes of our customers.</p>
+            </div>
 
+        </div>
+        
+     
+        <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12722.554896032645!2d42.6529755437519!3d37.137509292292805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400919c1c2a50c9d%3A0x72efb98cee37dcad!2sDiroz%20company!5e0!3m2!1sen!2siq!4v1722691864525!5m2!1sen!2siq" width="100%" height="450" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-                    
-                </p>
+    
+
+        <div class="foot">
+            <h1>Diroz Company</h1>
+
+            <div class="phone">
+                <h4>Phone Number : 
+                    <p><a style="text-decoration: none; color: white;" href="tel:07504671008">07504671008</a>  - 
+                       <a style="text-decoration: none; color: white;" href="tel:07503971877">0750 397 1877</a> - 
+                       <a style="text-decoration: none; color: white;" href="tel:07504583387">0750 458 3387</a></p></h4>
+            </div>
+            <div class="address">
+                <h4>Address:- Ibrahim Khalil Road, Zakho, Iraq</h4>
+            </div>
+            <div class="icons">
+                <ul type="none">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="comp">
+                <h4>Diroz Company © 2014 | All Rights Reserved</h4>
+                <h4>Developed By: Alan Salah</h4>
             </div>
         </div>
-
-        <!--image-->
-
-        <div class="tt">
-            <img src="images/dirozz.jpg"/>
-        </div>
-
-        <div class="tt">
-            <img src="images/dirozbc.jpg"/>
-        </div>
-
-        <div class="tt">
-            <img src="images/pradalal.jpg"/>
-        </div>
-
-        <div class="tt">
-            <img src="images/dsc.jpg"/>
-        </div>
-
-        <div class="mg">
-            <img src="images/trr.jpg"/>
-        </div>
-
-        <div class="pp">
-            <img src="images/ppp.jpg"/>
-        </div>
-
-       
-
-        <!--footer-->
-        <section class="footer">
-            <h1>Diroz <font>Company</font></h1>
-            <div class="tile">
-                <p>Phone Number: &nbsp; <a style="color: black;" href="tel:07504671008">0750 467 1008</a>&nbsp;
-                    - &nbsp; <a style="color: black;" href="tel:07503971877">0750 397 1877</a>
-                    - &nbsp; <a style="color: black;" href="tel:07504583387">0750 4583 387</a>
-                </p>
-                <br>
-                <p>Address:- Ibrahim  Khalil  Road,  Zakho, Iraq
-                </p>
-            </div>
-            <div class="social">
-                <a href="https://instagram.com/diroz_company"><li class="fab fa-instagram"></li></a>
-                <a href="https://facebook.com/Dirozcompany"><li class="fab fa-facebook-f"></li></a>
-                <a href="#"><li class="fab fa-telegram"></li></a>
-                <a href="https://wa.me/07504583387"><li class="fab fa-whatsapp"></li></a>
-            </div>
-            <div class="ptp">
-                <p>Diroz Company © 2014 | All Rights Reserved
-                </p>
-                <p>Developed By: Alan Salah
-                </p>
-            </div>
-        </section>
 
 
         <script>
@@ -120,10 +385,9 @@
         
         
         </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-    </body>
+</body>
 </html>

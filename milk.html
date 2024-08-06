@@ -1,19 +1,284 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <title>Diroz Company</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="home.css"/>
-        <link rel="icon" href="images/asd.jpg"/>
-    </head>
-    <body>
-        <!--navbar-->
-        <div class="navbar">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Diroz Company</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #1A3636;
+        }
+        .navbar{
+            width: 100%;
+            height: 90px;
+            background-color: #1A3636;
+            display: flex;
+          
+        }
+        .navbar h1{
+            color: #F9E400;
+            font-family:sans-serif;
+            margin: auto;
+            margin-left: 40px;
+        }
+        .navbar  ul{
+            margin: auto;
+            display: flex;
+            color: white;
+          
+        }
+        .navbar  li{
+            margin-left: 30px;
+            font-weight: 900;
+            background-color: #ffffff;
+            padding: 5px;
+            border: none;
+            border-radius: 6px;
+            color: black;
+        
+        }
+
+     
+        .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+            margin: 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+
+    .foot{
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        margin-top: 60px;
+       
+    }
+
+    .foot h1{
+        color: white;
+        text-align: center;
+    }
+    .phone{
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .address{
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        color: white;
+    }
+    .icons{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons ul{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons li{
+        text-align: center;
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .icons a{
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    .comp{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .comp h4{
+        color: white;
+        opacity: 0.6;
+        margin-top: 10px;
+    }
+
+    .nav a{
+    text-decoration: none;
+}
+
+.nav ul{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 60px;
     
-            <h1>Diroz <font>Company</font></h1>
+}
+
+.nav li{
+    margin: 10px;
+}
+
+.nav li a{
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    color: black;
+    margin: 10px;
+}
+
+.nav li a:hover{
+    background-color: #eee;
+}
+
+.header__toggle,
+.header__close{
+    display: none;
+}
+
+@media screen and (max-width:780px) {
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.navbar h1{
+    margin: auto;
+    margin-left: 20px;
+}
+
+.navbar h1 font{
+    color: white;
+}
+
+
+        .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+
+.header__toggle{
+    display: inline;
+    color: #eeee;
+    font-size:40px;
+    color: white;
+    margin: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.header__close{
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.header__close:hover{
+ background-color: #000;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #1A3636;
+    color: black;
+    width: 50%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+    text-align: center;
+}
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.nav li a{
+
+    color: black;
+}
+.show{
+    right: 0;
+}
+    
+}
+
+@media screen and (min-width:780px){
+    main{
+    display: inline-block;
+    margin: auto ;
+        margin-top: 50px;
+        align-items: center;
+        margin-left: 20px;
+}
+
+    .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+            display: inline-block;
+            margin: 10px;
+            align-items: center;
+            margin-left: 30px;
+            margin: 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+            font-size: small;
+        }
+}
+
+h3{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+   
+        <div class="navbar">
+            <h1>Diroz Company</h1>
             <nav class="nav" id="nav-menu">
                 <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
                 <ul type="none">
@@ -24,593 +289,228 @@
                     <li><a href="about.html">About Us</a></li>
                 </ul>
                 </nav>
-
                 <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
-            
         </div>
+        
+     
 
 
-           <!--bg-->
-           <div class="bg">
-            <img src="images/ddc.jpg" draggable="false"/>
-            </div>
     
+
+
+        <div class="product-template">
+            <img src="image/mozzarelakan2.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">GRATED MOZZARELLA CHEESE 1KG</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/sudamozz.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Kaanlar Suda <br>Mozzarella
+                120g x 12</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/mozzpeynar.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Kaanlar mozzarella<br> Cheese
+                200g x 24</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/kasertaze.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">THRACE FULL FAT <br>KASHAR CHEESE 400G</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/kaanlarkoy.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Kaanlar üçgen <br>Taze
+                650g x 8</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/kaanlarbeyaz.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">SPREADABLE WHITE <br>
+                CHEESE 180G</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/kaanlarlabne.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">LABNE CHEESE 180G</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/kaanlarciftlik.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Farm Full Fat White<br> Cheese 600G</h2>
+        </div>
+
+
+
+        <div class="product-template">
+            <img src="image/cream1.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream Valley 80g x 24</h2>
+        </div>
+
+
+        <div class="product-template">
+            <img src="image/cream2.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream Valley 80g x 24</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/cream3.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream Valley 80g x 24</h2>
+        </div>
+
+
+        <div class="product-template">
+            <img src="image/cream4.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream Valley 80g x 24</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbn3.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 64g x 60</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbn2.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 64g x 60</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbn1.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 64g x 60</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbn5.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 64g x 60</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbn4.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 64g x 60</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbl1.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 90g x 60</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbl2.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 90g x 60</h2>
+        </div>
+
+        <div class="product-template">
+            <img src="image/jbl3.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Cream 90g x 60</h2>
+        </div>
         
 
-        <!--product-->
-        <main>
-            <h2>Cream</h2>
-            <hr style="width: 73px;">
-          
-            <!--1-->
-            <div class="pd">
-                <div class="image">
-                    <img src="images/tyl.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Cream Valley 80g x 24
-                </div>
-                <div class="bt">
-   
-                </div>
-            </div>
-
-                 <!--2-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/trd.jpg"  draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Cream Valley 80g x 24
-                    </div>
-                    <div class="bt">
-   
-                    </div>
-                </div>
-
-                     <!--3-->
-            <div class="pd">
-                <div class="image">
-                    <img src="images/tbl.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Cream Valley 80g x 24
-                </div>
-                <div class="bt">
-
-                </div>
-            </div>
-
-                 <!--4-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/rgg.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Cream Valley 80g x 24
-                    </div>
-                    <div class="bt">
-
-                    </div>
-                </div>
-
-               
-                    <!--5-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/kdd.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Cream 64g x 60
-                        </div>
-                        <div class="bt">
-
-                        </div>
-                    </div>
-
-                        <!--6-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/dpp.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Cream 64g x 60
-                    </div>
-                    <div class="bt">
-                      
-                    </div>
-                </div>
-
-                    <!--7-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/kdk.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Cream 64g x 60
-                        </div>
-                        <div class="bt">
-                        
-                        </div>
-                    </div>
-
-                    <!--8-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/jby.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Cream 64g x 60
-                        </div>
-                        <div class="bt">
-                           
-                        </div>
-                    </div>
-
-                        <!--9-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/jbg.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Cream 64g x 60
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>
-
-                    <!--10-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/jbo.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Cream 64g x 60
-                        </div>
-                        <div class="bt">
-                           
-                        </div>
-                    </div>
-
-                        <!--11-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/jbpp.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Cream 90g x 60
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>
-
-             
-                    <!--12-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/jbll.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Cream 90g x 60
-                        </div>
-                        <div class="bt">
-                          
-                        </div>
-                    </div>
-
-                        <!--13-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/jbrr.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Cream 90g x 60
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                    
-                </div>
-                <h2>Kaanlar</h2>
-                <hr style="width: 90px;">
-                    <!--14-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/kanrdd.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                           Kaanlar Spreadable Cheddar Cheese <br>180g x 24
-                        </div>
-                        <div class="bt">
-                            
-                        </div>
-                    </div>
-
-                        <!--15-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/kanbd.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Kaanlar Spreadable Cream Cheese <br>180g x 24
-                    </div>
-                    <div class="bt">
-                        
-                    </div>
-                </div>
-           
-
-                    <!--16-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/kanrd.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Kaanlar Kashkaval Cheese <br> 250g x 12
-                        </div>
-                        <div class="bt">
-                            
-                        </div>
-                    </div>
-                    
-
-                        <!--17-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/kantt.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                       Kaanlar Suda Mozzarella <br> 120g x 12
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>
-
-                    <!--18-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/ddl.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Kaanlar üçgen Taze <br> 650g x 8
-                        </div>
-                        <div class="bt">
-                            
-                        </div>
-                    </div>
-
-                        <!--19-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/kkl.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                       Kaanlar Turkish Labneh <br> 180g x 24
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>
-
-                    <!--20-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/km.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Kaanlar mozzarella Cheese <br> 200g x 24
-                        </div>
-                        <div class="bt">
-                            
-                        </div>
-                    </div> 
-                              <!--22-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/ksc.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Kaanlar Shallal Cheese <br> 200 x 12
-                    </div>
-                    <div class="bt">
-                        
-                    </div>
-                </div>   
-                          <!--23-->
-                          <div class="pd">
-                            <div class="image">
-                                <img src="images/ksmc.jpg" draggable="false"/>
-                            </div>
-                            <div class="titl">
-                                Kaanlar Shredded Mozzarella Cheese <br> 200g x 12
-                            </div>
-                            <div class="bt">
-                               
-                            </div>
-                        </div>  
-                                  <!--24-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/kgc.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                       Kaanlar Goat Cheese <br> 150g x 8
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>
-
-                           <!--25-->
-                           <div class="pd">
-                            <div class="image">
-                                <img src="images/kct.jpg" draggable="false"/>
-                            </div>
-                            <div class="titl">
-                               Kaanlar çiftik <br> 650g x 6
-                            </div>
-                            <div class="bt">
-                                
-                            </div>
-                        </div>  
-                                  <!--26-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/krg.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Kaanlar Jeddal Cheese <br> 200g x 12
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>
-
-                      <!--27-->
-                      <div class="pd">
-                        <div class="image">
-                            <img src="images/kbz.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Kaanlar Butter <br> 200g x 24
-                        </div>
-                        <div class="bt">
-                           
-                        </div>
-                    </div>  
-                              <!--28-->
-             <div class="pd">
-                <div class="image">
-                    <img src="images/kfw.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Kaanlar Feta White <br> 250g x 16
-                </div>
-                <div class="bt">
-                   
-                </div>
-            </div>
-
-            <h2>Bakrac</h2>
-            <hr style="width: 80px;">
-
-                   <!--29-->
-                   <div class="pd">
-                    <div class="image">
-                        <img src="images/btk.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                       Bakraç Taze kasar <br> 1000g x 12
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>  
-                          <!--30-->
-         <div class="pd">
-            <div class="image">
-                <img src="images/bjq.jpg" draggable="false"/>
-            </div>
-            <div class="titl">
-                Bakraç <br> 250g x 12
-            </div>
-            <div class="bt">
-               
-            </div>
+        <div class="product-template">
+            <img src="image/bakractaze.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Bakraç Taze <br> kasar
+                1000g x 12</h2>
         </div>
 
-             <!--31-->
-             <div class="pd">
-                <div class="image">
-                    <img src="images/bop.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Bakraç örgü peyniri <br> 200g x 12
-                </div>
-                <div class="bt">
-                    
-                </div>
-            </div>  
-                      <!--32-->
-     <div class="pd">
-        <div class="image">
-            <img src="images/btp.jpg" draggable="false"/>
-        </div>
-        <div class="titl">
-            Bakraç Tel peyniri <br> 200g x 12
-        </div>
-        <div class="bt">
-           
-        </div>
-    </div>
-
-        <!--33-->
-        <div class="pd">
-            <div class="image">
-                <img src="images/boop.jpg" draggable="false"/>
-            </div>
-            <div class="titl">
-                Bakraç Otlu peynir <br> 200g x 24
-            </div>
-            <div class="bt">
-                
-            </div>
-        </div>  
-                  <!--34-->
- <div class="pd">
-    <div class="image">
-        <img src="images/bbpt.jpg" draggable="false"/>
-    </div>
-    <div class="titl">
-        Bakraç <br> 200g x 12
-    </div>
-    <div class="bt">
-       
-    </div>
-</div>
-
-                <h2>Seyber</h2>
-            <hr style="width: 75px;">
-                <!--35-->
-        <div class="pd">
-            <div class="image">
-                <img src="images/sjc.jpg" draggable="false"/>
-            </div>
-            <div class="titl"> 
-                Seyber Jaddal Cheese <br> 180g x 12
-            </div>
-            <div class="bt">
-                
-            </div>
-        </div>  
-                  <!--36-->
- <div class="pd">
-    <div class="image">
-        <img src="images/scf.jpg" draggable="false"/>
-    </div>
-    <div class="titl">
-        Seyber Cheese Finger <br> 180g x 12
-    </div>
-    <div class="bt">
-       
-    </div>
-</div>
-
-                  <!--37-->
-                  <div class="pd">
-                    <div class="image">
-                        <img src="images/ssc.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Seyber Shallal Cheese <br> 180g x 12
-                    </div>
-                    <div class="bt">
-                       
-                    </div>
-                </div>  
-                          <!--38-->
-         <div class="pd">
-            <div class="image">
-                <img src="images/sqr.jpg" draggable="false"/>
-            </div>
-            <div class="titl">
-                Seyber Qaymar <br> 100g x 24
-            </div>
-            <div class="bt">
-               
-            </div>
+        <div class="product-template">
+            <img src="image/bakracotlu.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Bakraç Otlu <br> peynir
+                200g x 24</h2>
         </div>
 
-            <!--39-->
-            <div class="pd">
-                <div class="image">
-                    <img src="images/sss.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Seyber <br> 65g x 6
-                </div>
-                <div class="bt">
-                   
-                </div>
-            </div>  
-                      <!--40-->
-     <div class="pd">
-        <div class="image">
-            <img src="images/ses.jpg" draggable="false"/>
+        <div class="product-template">
+            <img src="image/peynir.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Bakraç Tel peyniri<br>
+                200g x 12</h2>
         </div>
-        <div class="titl">
-            Seyber Village Cheese <br>  9kg
+        <div class="product-template">
+            <img src="image/peynir2.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Bakraç örgü peyniri<br>
+                200g x 12</h2>
         </div>
-        <div class="bt">
-           
+
+        <div class="product-template">
+            <img src="image/seyber1.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Seyber Shallal <br> Cheese
+                180g x 12</h2>
         </div>
-    </div>
 
-        <!--41-->
-        <div class="pd">
-            <div class="image">
-                <img src="images/bakoo.jpg" draggable="false"/>
-            </div>
-            <div class="titl">
-                Bako 10Adet <br> 650g x 12
-            </div>
-          
-        </div>  
-                  <!--42-->
- <div class="pd">
-    <div class="image">
-        <img src="images/bpoo.jpg" draggable="false"s/>
-    </div>
-    <div class="titl">
-        WhiteCow <br> 50g x 60
-    </div>
-   
-</div>
-        
-                <!--43-->
-                <div class="pd">
-                    <div class="image">
-                        <img src="images/neba.jpg" draggable="false"s/>
-                    </div>
-                    <div class="titl">
-                        Neba <br> 200g x 20
-                    </div>
-                
-                </div>
+        <div class="product-template">
+            <img src="image/seyber2.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Seyber Cheese Finger<br>
+                180g x 12</h2>
+        </div>
 
+        <div class="product-template">
+            <img src="image/seyber3.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Seyber Qaymar <br>
+                100g x 24</h2>
+        </div>
 
-        </main>
+        <div class="product-template">
+            <img src="image/seyber4.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2 style="font-size: 17px;">Seyber
+                65g x 6</h2>
+        </div>
 
+    </main>
+    
 
-      
-        <!--footer-->
-        <section class="footer">
-            <h1>Diroz <font>Company</font></h1>
-            <div class="tile">
-                <p>Phone Number: &nbsp; <a style="color: black;" href="tel:07504671008">0750 467 1008</a>&nbsp;
-                    - &nbsp; <a style="color: black;" href="tel:07503971877">0750 397 1877</a>
-                    - &nbsp; <a style="color: black;" href="tel:07504583387">0750 4583 387</a>
-                </p>
-                <br>
-                <p>Address:- Ibrahim  Khalil  Road,  Zakho, Iraq
-                </p>
+        <div class="foot">
+            <h1>Diroz Company</h1>
+
+            <div class="phone">
+                <h4>Phone Number : 
+                    <p><a style="text-decoration: none; color: white;" href="tel:07504671008">07504671008</a>  - 
+                       <a style="text-decoration: none; color: white;" href="tel:07503971877">0750 397 1877</a> - 
+                       <a style="text-decoration: none; color: white;" href="tel:07504583387">0750 458 3387</a></p></h4>
             </div>
-            <div class="social">
-                <a href="https://instagram.com/diroz_company"><li class="fab fa-instagram"></li></a>
-                <a href="https://facebook.com/Dirozcompany"><li class="fab fa-facebook-f"></li></a>
-                <a href="#"><li class="fab fa-telegram"></li></a>
-                <a href="https://wa.me/07504583387"><li class="fab fa-whatsapp"></li></a>
+            <div class="address">
+                <h4>Address:- Ibrahim Khalil Road, Zakho, Iraq</h4>
             </div>
-            <div class="ptp">
-                <p>Diroz Company © 2014 | All Rights Reserved
-                </p>
-                <p>Developed By: Alan Salah
-                </p>
+            <div class="icons">
+                <ul type="none">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
             </div>
-        </section>
+
+            <div class="comp">
+                <h4>Diroz Company © 2014 | All Rights Reserved</h4>
+                <h4>Developed By: Alan Salah</h4>
+            </div>
+        </div>
 
 
         <script>
@@ -627,9 +527,9 @@
         
         
         </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    </body>
+</body>
 </html>

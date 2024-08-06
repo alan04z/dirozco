@@ -1,19 +1,276 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <title>Diroz Company</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="home.css"/>
-        <link rel="icon" href="images/asd.jpg"/>
-    </head>
-    <body>
-        <!--navbar-->
-        <div class="navbar">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Diroz Company</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #1A3636;
+        }
+        .navbar{
+            width: 100%;
+            height: 90px;
+            background-color: #1A3636;
+            display: flex;
+  
+        }
+        .navbar h1{
+            color: #F9E400;
+            font-family:sans-serif;
+            margin: auto;
+            margin-left: 40px;
+        }
+        .navbar  ul{
+            margin: auto;
+            display: flex;
+            color: white;
+          
+        }
+        .navbar  li{
+            margin-left: 30px;
+            font-weight: 900;
+            background-color: #ffffff;
+            padding: 5px;
+            border: none;
+            border-radius: 6px;
+            color: black;
+        
+        }
+
+     
+        .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+            margin: 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+
+    .foot{
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        margin-top: 60px;
+      
+    }
+
+    .foot h1{
+        color: white;
+        text-align: center;
+    }
+    .phone{
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .address{
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        color: white;
+    }
+    .icons{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons ul{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons li{
+        text-align: center;
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .icons a{
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    .comp{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .comp h4{
+        color: white;
+        opacity: 0.6;
+        margin-top: 10px;
+    }
+
+    .nav a{
+    text-decoration: none;
+}
+
+.nav ul{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 60px;
     
-            <h1>Diroz <font>Company</font></h1>
+}
+
+.nav li{
+    margin: 10px;
+}
+
+.nav li a{
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    color: black;
+    margin: 10px;
+}
+
+.nav li a:hover{
+    background-color: #eee;
+}
+
+.header__toggle,
+.header__close{
+    display: none;
+}
+
+@media screen and (max-width:780px) {
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.navbar h1{
+    margin: auto;
+    margin-left: 20px;
+}
+
+.navbar h1 font{
+    color: white;
+}
+
+
+        .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+
+.header__toggle{
+    display: inline;
+    color: #eeee;
+    font-size:40px;
+    color: white;
+    margin: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.header__close{
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.header__close:hover{
+ background-color: #000;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #1A3636;
+    color: black;
+    width: 50%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+    text-align: center;
+}
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.nav li a{
+
+    color: black;
+}
+.show{
+    right: 0;
+}
+    
+}
+
+@media screen and (min-width:780px){
+    main{
+    display: inline-block;
+    margin: auto ;
+        margin-top: 50px;
+        align-items: center;
+        margin-left: 20px;
+}
+
+    .product-template{
+            width: 300px;
+            height: 300px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+            display: inline-block;
+            margin: 10px;
+            align-items: center;
+            margin-left: 30px;
+            margin: 25px;
+        }
+
+        .product-template h2{
+            text-align: center;
+            color: white;
+        }
+}
+
+    </style>
+</head>
+<body>
+   
+        <div class="navbar">
+            <h1>Diroz Company</h1>
             <nav class="nav" id="nav-menu">
                 <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
                 <ul type="none">
@@ -24,209 +281,88 @@
                     <li><a href="about.html">About Us</a></li>
                 </ul>
                 </nav>
-
                 <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
-            
+        </div>
+        
+     
+
+
+        <main>
+
+
+        <div class="product-template">
+            <img src="image/lavera2.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2>Lavera Biscuits 44g</h2>
         </div>
 
-        <!--product-->
-        <main>
-            <h2>Sweets &Biscuits</h2>
-            <hr style="width: 180px;">
-            <!--1-->
-            <div class="pd">
-                <div class="image">
-                    <img src="images/mamu.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                   Mamuto Biscuits 28g
-                </div>
-                <div class="bt">
-               
-                </div>
-            </div>
-
-              <!--2-->
-              <div class="pd">
-                <div class="image">
-                    <img src="images/lavera.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Lavera Biscuits 44g
-                </div>
-                <div class="bt">
-               
-                </div>
-            </div>
-
-               <!--3-->
-               <div class="pd">
-                <div class="image">
-                    <img src="images/Dancee.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Lavera Biscuits 44g
-                </div>
-                <div class="bt">
-               
-                </div>
-            </div>
+        <div class="product-template">
+            <img src="image/dance1.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2>dance Coconut Cream</h2>
+        </div>
 
 
-              <!--3-->
-              <div class="pd">
-                <div class="image">
-                    <img src="images/Wizoo.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Lavera Biscuits 44g
-                </div>
-                <div class="bt">
-               
-                </div>
-            </div>
+        <div class="product-template">
+            <img src="image/wizo.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2>Wizo</h2>
+        </div>
 
-            
+        <div class="product-template">
+            <img src="image/pinkpie.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2>PinkPie</h2>
+        </div>
 
-                 <!--2-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/dancem.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Dance Cream Milk 33g
-                    </div>
-                    <div class="bt">
-                
-                    </div>
-                </div>
+        <div class="product-template">
+            <img src="image/damarose.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2>Dama Rose Biscuits</h2>
+        </div>
 
-                     <!--3-->
-            <div class="pd">
-                <div class="image">
-                    <img src="images/dances.jpg" draggable="false"/>
-                </div>
-                <div class="titl">
-                    Dance Cream Strawberry 33g
-                </div>
-                <div class="bt">
-        
-                </div>
-            </div>
+        <div class="product-template">
+            <img src="image/laveraxxl.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2>Lavera Dance XXL</h2>
+        </div>
 
-           
+        <div class="product-template">
+            <img src="image/mamu.jpg" alt=""
+            width="300px" height="240px" style="border-radius: 20px 20px 0px 0px;"/>
+            <h2>Mamuto Biscuits 28g</h2>
+        </div>
 
-           
-               
 
-                        <!--5-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/starone.jpg" draggable="false" />
-                    </div>
-                    <div class="titl">
-                        StarOne 50g
-                    </div>
-                    <div class="bt">
-
-                    </div>
-                </div>
-
-                    <!--6-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/staronec.jpg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            StarOne Cream Cake 25g
-                        </div>
-                        <div class="bt">
-                        
-                        </div>
-                    </div>
-
-                        <!--7-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/dabdoby.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        DabDoby 25g
-                    </div>
-                    <div class="bt">
-                     
-                    </div>
-                </div>
-
-            
-                    <!--8-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/bisufle.jpg" draggable="false" />
-                        </div>
-                        <div class="titl">
-                            Bisufle Cookies 50g
-                        </div>
-                        <div class="bt">
-                       
-                        </div>
-                    </div>
-
-                        <!--9-->
-                 <div class="pd">
-                    <div class="image">
-                        <img src="images/belladora.jpg" draggable="false"/>
-                    </div>
-                    <div class="titl">
-                        Bella Dora 50g
-                    </div>
-                    <div class="bt">
-                      
-                    </div>
-                </div>
+    </main>
     
-                    <!--10-->
-                    <div class="pd">
-                        <div class="image">
-                            <img src="images/mamu.jpeg" draggable="false"/>
-                        </div>
-                        <div class="titl">
-                            Choco Mamuto 27g
-                        </div>
-                        <div class="bt">
-                           <!---<button><a style="text-decoration: none; color: black;" href="tel:07504583387">Contact</a></button>-->
-                        </div>
-                    </div>
-        </main>
 
+        <div class="foot">
+            <h1>Diroz Company</h1>
 
-    
-        <!--footer-->
-        <section class="footer">
-            <h1>Diroz <font>Company</font></h1>
-            <div class="tile">
-                <p>Phone Number: &nbsp; <a style="color: black;" href="tel:07504671008">0750 467 1008</a>&nbsp;
-                    - &nbsp; <a style="color: black;" href="tel:07503971877">0750 397 1877</a>
-                    - &nbsp; <a style="color: black;" href="tel:07504583387">0750 4583 387</a>
-                </p>
-                <br>
-                <p>Address:- Ibrahim  Khalil  Road,  Zakho, Iraq
-                </p>
+            <div class="phone">
+                <h4>Phone Number : 
+                    <p><a style="text-decoration: none; color: white;" href="tel:07504671008">07504671008</a>  - 
+                       <a style="text-decoration: none; color: white;" href="tel:07503971877">0750 397 1877</a> - 
+                       <a style="text-decoration: none; color: white;" href="tel:07504583387">0750 458 3387</a></p></h4>
             </div>
-            <div class="social">
-                <a href="https://instagram.com/diroz_company"><li class="fab fa-instagram"></li></a>
-                <a href="https://facebook.com/Dirozcompany"><li class="fab fa-facebook-f"></li></a>
-                <a href="#"><li class="fab fa-telegram"></li></a>
-                <a href="https://wa.me/07504583387"><li class="fab fa-whatsapp"></li></a>
+            <div class="address">
+                <h4>Address:- Ibrahim Khalil Road, Zakho, Iraq</h4>
             </div>
-            <div class="ptp">
-                <p>Diroz Company © 2014 | All Rights Reserved
-                </p>
-                <p>Developed By: Alan Salah
-                </p>
+            <div class="icons">
+                <ul type="none">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
             </div>
-        </section>
 
+            <div class="comp">
+                <h4>Diroz Company © 2014 | All Rights Reserved</h4>
+                <h4>Developed By: Alan Salah</h4>
+            </div>
+        </div>
 
 
         <script>
@@ -243,9 +379,9 @@
         
         
         </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    </body>
+</body>
 </html>

@@ -4,35 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diroz Company</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="images/asd.jpg"/>
+    <title>Diroz Company</title>
     <style>
         *{
             padding: 0;
             margin: 0;
+            background-color: #1A3636;
+        }
+        .navbar{
+            width: 100%;
+            height: 90px;
+            background-color: #1A3636;
+            display: flex;
+           
+        }
+        .navbar h1{
+            color: #F9E400;
+            font-family:sans-serif;
+            margin: auto;
+            margin-left: 40px;
+        }
+        .navbar  ul{
+            margin: auto;
+            display: flex;
+            color: white;
+          
+        }
+        .navbar  li{
+            margin-left: 30px;
+            font-weight: 900;
+            background-color: #ffffff;
+            padding: 5px;
+            border: none;
+            border-radius: 6px;
+            color: black;
+        
         }
 
-        .navbar{
-    width: 100%;
-    height: 70px;
-    background-color: #F4E0B9;
-    display: flex;
-}
+        .bg{
+            width: 80%;
+            height: 330px;
+            background-color: #F9E400;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 20px;
+        }
+        .product-template{
+            width: 80%;
+            height: 100px;
+            background-color: #1A3636;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 20px;
+            box-shadow: white 0px 0px 25px;
+            display: flex;
+        }
 
-.navbar h1{
-    margin: auto;
-    margin-left: 20px;
-}
+        .product-template h3{
+            margin: auto;
+            color: white;
+            margin-left: 40px;
+        }
 
-.navbar h1 font{
-    color: white;
-}
-a{
+    .foot{
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        margin-top: 60px;
+ 
+    }
+
+    .foot h1{
+        color: white;
+        text-align: center;
+    }
+    .phone{
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .address{
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        color: white;
+    }
+    .icons{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons ul{
+        margin: auto;
+        display: flex;
+    }
+
+    .icons li{
+        text-align: center;
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .icons a{
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    .comp{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .comp h4{
+        color: white;
+        opacity: 0.6;
+        margin-top: 10px;
+    }
+
+    .nav a{
     text-decoration: none;
 }
 
-ul{
+.nav ul{
     display: flex;
     margin: auto;
     margin-top: 20px;
@@ -40,11 +138,11 @@ ul{
     
 }
 
-li{
+.nav li{
     margin: 10px;
 }
 
-li a{
+.nav li a{
     padding: 5px;
     background-color: white;
     border-radius: 10px;
@@ -53,9 +151,7 @@ li a{
     margin: 10px;
 }
 
-li a:hover{
-    background-color: #eee;
-}
+
 
 .header__toggle,
 .header__close{
@@ -67,7 +163,6 @@ li a:hover{
 .navbar{
     width: 100%;
     height: 70px;
-    background-color: #F4E0B9;
     display: flex;
 }
 
@@ -80,11 +175,13 @@ li a:hover{
     color: white;
 }
 
+
+
 .header__toggle{
     display: inline;
     color: #eeee;
-    font-size: 34px;
-    color: black;
+    font-size:40px;
+    color: white;
     margin: auto;
     margin-right: 20px;
     cursor: pointer;
@@ -95,18 +192,18 @@ li a:hover{
     display: block;
     font-size: 24px;
     border-radius: 50%;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 .header__close:hover{
- background-color: #eee;
+ background-color: #000;
 }
 
 nav{
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: #F4E0B9;
+    background-color: #1A3636;
     color: black;
     width: 50%;
     height: 100vh;
@@ -116,12 +213,12 @@ nav{
     border-radius: 0 0 0 50%;
     text-align: center;
 }
-ul{
+.nav ul{
     display: flex;
     flex-direction: column;
     margin-top: 70px;
 }
-li a{
+.nav li a{
 
     color: black;
 }
@@ -131,114 +228,40 @@ li a{
     
 }
 
-main{
-    display: block;
-    margin: auto ;
-    margin-top: 50px;
 
-}
-
-.pd{
-    display: flex;
-    margin-top: 20px;
-    margin: auto;
-    width: 95%;
-    height: 100px;
-    background-color: #F4E0B9;
-    border-radius: 20px;
-    margin-top: 40px;
-}
-
-.pd .titl{
-    margin: auto;
-    margin-left: 25px;
-    font-weight: 900;
-    font-size: larger;
-}
-
-.pd .bt{
-    margin: auto;
-}
-
-.bt button{
-    border: none;
-    margin: auto;
-    background-color: white;
-    padding: 8px;
-    border-radius: 10px;
-    font-weight: 900;
-}
-
-.footer{
-    padding: 20px 0;
-    background-color: #F4E0B9;
+h2{
+    text-align: center;
     margin-top: 30px;
-}
-
-.footer .social{
-    text-align: center;
-    margin-top: 10px;
-    color: #fff;
-}
-
-.footer .social a{
-    font-size: 24px;
-    text-align: center;
-
-    color: #000;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-}
-
-footer .ftt{
-    width: 100%;
-    height: 180px;
-    background-color: #F4E0B9;
-    margin-top: 50px;
-}
-
-.footer h1{
-    text-align: center;
-    font-size:xx-large;
-}
-
-.footer .tile{
-    text-align: center;
-    margin-left: 20px;
-    margin-top: 20px;
-    color: #000000;
-}
-
-.ptp p{
-    opacity: .5;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer h1 font{
     color: white;
+   
+    text-decoration: underline;
 }
 
-main h2{
+.product-template button{
     margin: auto;
-    margin-left: 20px;
-    margin-top: 20px;
-    text-decoration: underline;
+    border: none;
+    border-radius: 10px;
+}
+
+.product-template a{
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-weight: 900;
+}
+
+.product-template a:hover{
+    background-color: #eeee;
 }
 
     </style>
 </head>
 <body>
-
-         <!--navbar-->
-         <div class="navbar">
-    
-            <h1>Diroz <font>Company</font></h1>
+   
+        <div class="navbar">
+            <h1>Diroz Company</h1>
             <nav class="nav" id="nav-menu">
                 <ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
                 <ul type="none">
@@ -249,74 +272,62 @@ main h2{
                     <li><a href="about.html">About Us</a></li>
                 </ul>
                 </nav>
-
                 <ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
-            
+        </div>
+        
+ 
+        
+
+
+        <h2>General Manager</h2>
+
+        <div class="product-template">
+            <h3>Sulaiman Haji</h3>
+            <button><a href="tel:07504671008">Phone Call</a></button>
         </div>
 
+        <h2>Manager Of Sweets & Biscuits</h2>
 
-        <main>
-           
-            <h2>General Manager </h2>
-           
+        <div class="product-template">
+            <h3>Salah Shafiq</h3>
+            <button><a href="tel:07503971877">Phone Call</a></button>
+        </div>
 
-                 <!--1-->
-                 <div class="pd">
-                    <div class="titl">
-                        Sulaiman Haji
-                    </div>
-                    <div class="bt">
-                        <button><a style="text-decoration: none; color: black;" href="tel:07504671008">Phone Call</a></button>
-                    </div>
-                </div>
-                        <!--3-->
-                        <h2>Manager Of Sweets & Biscuits</h2>
-                 <div class="pd">
-                    <div class="titl">
-                       Salah Shafiq
-                    </div>
-                    <div class="bt">
-                        <button><a style="text-decoration: none; color: black;" href="tel:07503971877">Phone Call</a></button>
-                    </div>
-                </div>
-                    <!--4-->
-                    <h2>Manager Of milk & dairy </h2>
-                    <div class="pd">
-                        <div class="titl">
-                            Amjad Haji
-                        </div>
-                        <div class="bt">
-                            <button><a style="text-decoration: none; color: black;" href="tel:07504583387">Phone Call</a></button>
-                        </div>
-                    </div>
-            
-        </main>
+        <h2>Manager Of milk & dairy</h2>
 
-               <!--footer-->
-               <section class="footer">
-                <h1>Diroz <font>Company</font></h1>
-                <div class="tile">
-                    <p>Phone Number: &nbsp; <a style="color: black;" href="tel:07504671008">0750 467 1008</a>&nbsp;
-                        - &nbsp; <a style="color: black;" href="tel:07503971877">0750 397 1877</a>
-                        - &nbsp; <a style="color: black;" href="tel:07504583387">0750 4583 387</a>
-                    </p>
-                    <br>
-                    <p>Address:- Ibrahim  Khalil  Road,  Zakho, Iraq
-                    </p>
-                </div>
-                <div class="social">
-                    <a href="https://instagram.com/diroz_company"><li class="fab fa-instagram"></li></a>
-                    <a href="https://facebook.com/Dirozcompany"><li class="fab fa-facebook-f"></li></a>
-                    <a href="#"><li class="fab fa-telegram"></li></a>
-                    <a href="https://wa.me/07504583387"><li class="fab fa-whatsapp"></li></a>
-                </div>
-                <div class="ptp">
-                    <p>Diroz Company © 2014 | All Rights Reserved
-                    </p>
-                    <p>Developed By: Alan Salah
-                    </p>
-                </div>
-            </section>
+        <div class="product-template">
+            <h3>Amjad Haji</h3>
+            <button><a href="tel:07504583387">Phone Call</a></button>
+        </div>
+
+    
+
+        <div class="foot">
+            <h1>Diroz Company</h1>
+
+            <div class="phone">
+                <h4>Phone Number : 
+                  <p><a style="text-decoration: none; color: white;" href="tel:07504671008">07504671008</a>  - 
+                     <a style="text-decoration: none; color: white;" href="tel:07503971877">0750 397 1877</a> - 
+                     <a style="text-decoration: none; color: white;" href="tel:07504583387">0750 458 3387</a></p></h4>
+            </div>
+            <div class="address">
+                <h4>Address:- Ibrahim Khalil Road, Zakho, Iraq</h4>
+            </div>
+            <div class="icons">
+                <ul type="none">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="comp">
+                <h4>Diroz Company © 2014 | All Rights Reserved</h4>
+                <h4>Developed By: Alan Salah</h4>
+            </div>
+        </div>
 
 
         <script>
@@ -333,10 +344,9 @@ main h2{
         
         
         </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    
 </body>
 </html>
